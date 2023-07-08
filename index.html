@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #myImage {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        #myImage.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="myImage" src="your-image.jpg">
+    <script>
+        setTimeout(function () {
+            var image = document.getElementById('myImage');
+            image.classList.add('show');
+        }, 1000);
+    </script>
+</body>
+
+</html>
