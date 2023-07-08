@@ -6,8 +6,17 @@
         #myImage {
             opacity: 0;
             display: block;
-            margin:0 auto;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 100%;
             transition: opacity 1s ease-in-out;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         #myImage.show {
@@ -17,7 +26,9 @@
 </head>
 
 <body>
-    <img id="myImage" src="banner.png">
+    <div class="center">
+        <img id="myImage" src="banner.png">
+    </div>
     <script>
         setTimeout(function () {
             var image = document.getElementById('myImage');
